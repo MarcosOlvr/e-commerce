@@ -1,6 +1,5 @@
 body {
     overflow-x: overlay !important;
-    overflow-y: hidden;
     overflow-wrap: break-word;
 }
 
