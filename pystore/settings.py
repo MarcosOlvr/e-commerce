@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-from cart.cart import Cart
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #apps de terceiros
     "widget_tweaks",
+    "crispy_forms",
+    "localflavor",
     #my apps
     "users.apps.UsersConfig",
     "pages.apps.PagesConfig",
@@ -149,3 +150,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 CART_SESSION_ID = "cart"
 CART_ITEM_MAX_QUANTITY = 20
+
+# Crispy
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
